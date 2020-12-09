@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point with a mouse click</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="src/Draw.js"></script>
+    <br>
+    <form>
+  		<button type="button" id="clearButton">Clear Canvas</button>
+  	</form>
+  	<br>
+  	<b>Drawing Mode:</b>
+  	<br>
+  	<button type="button" id="Tri">Triangle</button>
+  	<button type="button" id="Squ">Square</button>
+  	<button type="button" id="Cir">Circle</button>
+  	<p>
+  		<b>Shape Color:</b>
+  		<br>
+  		Red
+  		<input type="range" min="0" max="100" value="50" class="slider" id="red">
+  		Green
+  		<input type="range" min="0" max="100" value="1" class="slider" id="green">
+  		Blue
+  		<input type="range" min="0" max="100" value="1" class="slider" id="blue">
+  	</p>
+  	<p>
+  		Shape Size
+  		<input type="range" min="10" max="40" value="20" class="slider" id="Shape Size">
+  		(Circles) Segment Count:
+  		<input type="range" min="50" max="105" value="80" class="slider" id="Segment Count">
+
+  </body>
+</html>
